@@ -1,0 +1,20 @@
+footer {
+    margin-top: 10px;
+}
+
+span {
+    display: inline-block;
+    padding: 0 20px;
+    color: #657786;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+svg {
+    color: #657786;
+    display: inline-block;
+    vertical-align: middle;
+    height: 17px;
+    width: 17px;
+    margin: 0 5px;
+}

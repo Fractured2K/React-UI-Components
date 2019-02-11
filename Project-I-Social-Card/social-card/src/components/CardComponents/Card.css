@@ -1,5 +1,43 @@
 /* All styles for your Card Components live here */
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px 0;
+}
+
 .card-banner {
     max-width: 509px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    border: 1px solid #E1E8ED;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 15px;
+    width: 89.3%;
+    font-size: 14px;
+}
+
+.card-content h1 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    line-height: 15px;
+    letter-spacing: 0.3px;
+}
+
+.card-content-link {
+    color: #8899A6;
+    margin-top: 5px;
+}
+
+.footer {
+    width: 93.3%;
 }
