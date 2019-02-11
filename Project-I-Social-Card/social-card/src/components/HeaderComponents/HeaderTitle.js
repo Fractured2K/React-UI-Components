@@ -4,9 +4,9 @@ import './Header.css';
 function HeaderTitle() {
     return (
         <div>
-            <p>
-                Lambda School <span>@LambdaSchool</span> &bullet; <span>26 Jan</span>
-            </p>
+            <h1 className="header-title">
+                Lambda School <span>@LambdaSchool &bull; 26 Jan</span>
+            </h1>
         </div>
     )
 }

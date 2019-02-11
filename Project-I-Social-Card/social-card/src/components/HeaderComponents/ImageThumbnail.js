@@ -1,8 +1,10 @@
 import React from 'react';
 import './Header.css';
 
+import Logo from './lambdacrest.png';
+
 function ImageThumbnail() {
-    return <img src="https://tk-assets.lambdaschool.com/1c1b7262-cf23-4a9f-90b6-da0d3c74a5c6_lambdacrest.png" alt="LambdaSchool Logo" />
+    return <img src={Logo} alt="LambdaSchool Logo" className="image-thumbnail" />
 }
 
 export default ImageThumbnail;
