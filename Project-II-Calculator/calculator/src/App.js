@@ -14,23 +14,29 @@ const App = () => {
         <CalculatorDisplay />
         <ButtonContainer>
           <ActionButton text="clear" actionStyle="action-style" />
-          <NumberButton text="/" />
+          <NumberButton buttonStyle="btn-style-red" text="÷" />
         </ButtonContainer>
         <ButtonContainer>
-          <NumberButton text="7" />
-          <NumberButton text="8" />
-          <NumberButton text="9" />
-          <NumberButton text="X" />
+          <NumberButton buttonStyle="btn-style" text="7" />
+          <NumberButton buttonStyle="btn-style" text="8" />
+          <NumberButton buttonStyle="btn-style" text="9" />
+          <NumberButton buttonStyle="btn-style-red" text="x" />
         </ButtonContainer>
         <ButtonContainer>
-          <NumberButton text="3" />
-          <NumberButton text="2" />
-          <NumberButton text="1" />
-          <NumberButton text="+" />
+          <NumberButton buttonStyle="btn-style" text="7" />
+          <NumberButton buttonStyle="btn-style" text="8" />
+          <NumberButton buttonStyle="btn-style" text="9" />
+          <NumberButton buttonStyle="btn-style-red" text="-" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <NumberButton buttonStyle="btn-style" text="3" />
+          <NumberButton buttonStyle="btn-style" text="2" />
+          <NumberButton buttonStyle="btn-style" text="1" />
+          <NumberButton buttonStyle="btn-style-red" text="+" />
         </ButtonContainer>
         <ButtonContainer>
           <ActionButton text="0" actionStyle="action-style" />
-          <NumberButton text="=" />
+          <NumberButton buttonStyle="btn-style-red" text="=" />
         </ButtonContainer>
 
       </div>

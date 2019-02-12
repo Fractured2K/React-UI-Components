@@ -5,12 +5,5 @@
 
 .calc-container {
     width: 456px;
-    height: 598px;
-}
-
-.action-style {
-    width: 75%;
-    font-size: 45px;
-    padding: 10px;
-    background: #ffffff;
+    border: 1px solid #979797;
 }
