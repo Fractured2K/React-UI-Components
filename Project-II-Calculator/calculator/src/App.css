@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.calc-container {
+    width: 456px;
+    height: 598px;
+}

@@ -5,8 +5,10 @@ import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay'
 
 const App = () => {
   return (
-    <div>
-      <CalculatorDisplay />
+    <div className="container">
+      <div className="calc-container">
+        <CalculatorDisplay />
+      </div>
     </div>
   );
 };
