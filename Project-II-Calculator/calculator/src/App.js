@@ -1,23 +1,72 @@
 import React from 'react';
+import './reset.css';
 import './App.css';
 
-const App = () => {
-  return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
-    </div>
-  );
-};
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+import ButtonContainer from './components/ButtonComponents/ButtonContainer';
+import ActionButton from './components/ButtonComponents/ActionButton';
+import NumberButton from './components/ButtonComponents/NumberButton';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      total: [5]
+    };
+
+    this.handleClear = this.handleClear.bind(this);
+    this.handleValue = this.handleValue.bind(this);
+  }
+
+  handleClear(e) {
+    this.setState({ total: [0] })
+  }
+
+  handleValue(e) {
+    console.log(e.target.att)
+    this.setState(function (state) {
+      return {
+        total: state.total + 1
+      };
+    });
+  }
+
+  render() {
+    return (
+      <div className="container">
+        <div className="calc-container">
+          <CalculatorDisplay total={this.state.total} />
+          <ButtonContainer>
+            <ActionButton clickHandler={this.handleClear} text="clear" actionStyle="action-style" />
+            <NumberButton buttonStyle="btn-style-red" text="÷" />
+          </ButtonContainer>
+          <ButtonContainer>
+            <NumberButton clickHandler={this.handleValue} buttonStyle="btn-style" text="7" />
+            <NumberButton buttonStyle="btn-style" text="8" />
+            <NumberButton buttonStyle="btn-style" text="9" />
+            <NumberButton buttonStyle="btn-style-red" text="x" />
+          </ButtonContainer>
+          <ButtonContainer>
+            <NumberButton buttonStyle="btn-style" text="7" />
+            <NumberButton buttonStyle="btn-style" text="8" />
+            <NumberButton buttonStyle="btn-style" text="9" />
+            <NumberButton buttonStyle="btn-style-red" text="-" />
+          </ButtonContainer>
+          <ButtonContainer>
+            <NumberButton buttonStyle="btn-style" text="3" />
+            <NumberButton buttonStyle="btn-style" text="2" />
+            <NumberButton buttonStyle="btn-style" text="1" />
+            <NumberButton buttonStyle="btn-style-red" text="+" />
+          </ButtonContainer>
+          <ButtonContainer>
+            <ActionButton text="0" actionStyle="action-style" />
+            <NumberButton buttonStyle="btn-style-red" text="=" />
+          </ButtonContainer>
+        </div>
+      </div>
+    );
+  };
+}
 
 export default App;
